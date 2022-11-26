@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import BooksContext from './context/Book';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BooksContext.Provider  value={10}>
+    <App />, 
+    </BooksContext.Provider>
   </React.StrictMode>
 );
 
